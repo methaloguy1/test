@@ -1,42 +1,35 @@
-/* --- NATIVE MENU INJECTOR (Quick Tools) --- */
 (function() {
     let toolsAdded = false;
     
     const observer = new MutationObserver(() => {
         if (toolsAdded) return;
         
-        // Find the main menu by looking for its common category names
         const menuElements = Array.from(document.querySelectorAll('*')).filter(el => 
             el.innerText && (el.innerText === 'Global' || el.innerText.includes('Cafe Cheats') || el.innerText.includes('Anti-Hack'))
         );
         
         if (menuElements.length > 0) {
-            // Locate the main GUI container
             let guiContainer = menuElements[0].closest('div[style*="z-index"]') || menuElements[0].parentElement.parentElement;
             
             if (guiContainer && !document.getElementById('my-quick-tools')) {
                 toolsAdded = true;
                 
-                // Find where the script stores its buttons
                 let buttonContainer = Array.from(guiContainer.querySelectorAll('div')).filter(d => 
                     window.getComputedStyle(d).display === 'flex' || window.getComputedStyle(d).display === 'grid'
                 ).pop();
                 
                 if (!buttonContainer) buttonContainer = guiContainer;
                 
-                // Create a native-looking divider/category title
                 let divider = document.createElement('div');
                 divider.id = 'my-quick-tools';
                 divider.innerText = '☰ Quick Tools';
                 divider.style.cssText = 'color: white; font-weight: bold; text-align: center; margin-top: 15px; margin-bottom: 5px; border-bottom: 1px solid #444; padding-bottom: 5px; font-family: sans-serif; font-size: 14px;';
                 buttonContainer.appendChild(divider);
                 
-                // Function to create buttons that perfectly clone the other script's style
                 function createBtn(text, onClick) {
                     let btn = document.createElement('button');
                     btn.innerText = text;
                     
-                    // Steal the exact CSS from one of the other buttons so it blends perfectly
                     let sampleBtn = guiContainer.querySelector('button');
                     if (sampleBtn) {
                         btn.style.cssText = window.getComputedStyle(sampleBtn).cssText;
@@ -45,7 +38,6 @@
                         btn.style.cssText = 'padding: 8px; margin: 4px 0; width: 100%; cursor: pointer; background-color: #444; color: white; border: none; border-radius: 6px; transition: 0.2s;';
                     }
                     
-                    // Ensure spacing and hover effects
                     btn.style.marginTop = '6px';
                     btn.onmouseover = () => { if(btn.style.backgroundColor === 'rgb(68, 68, 68)') btn.style.backgroundColor = '#666'; };
                     btn.onmouseout = () => { if(btn.style.backgroundColor === 'rgb(102, 102, 102)') btn.style.backgroundColor = '#444'; };
@@ -55,7 +47,6 @@
                     return btn;
                 }
                 
-                /* --- INJECT YOUR ORIGINAL FUNCTIONS --- */
                 createBtn('Toggle Fullscreen', () => {
                     if (!document.fullscreenElement) document.documentElement.requestFullscreen();
                     else document.exitFullscreen();
@@ -96,7 +87,6 @@
                     document.designMode = window.editActive ? 'on' : 'off';
                 });
 
-                // Re-apply the logic for erasing/editing elements
                 document.addEventListener('mouseover', function(e) {
                     if (guiContainer.contains(e.target)) return; 
                     if (zapActive) {
