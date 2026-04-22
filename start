@@ -1,0 +1,1 @@
+mitmweb --mode wireguard -s strip_csp.py --set block_global=false
