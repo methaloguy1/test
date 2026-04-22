@@ -1,0 +1,1210 @@
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   ├── config.yml
+│   │   └── feature_request.md
+│   └── workflows/
+│       ├── codeql-analysis.yml
+│       ├── docker-alpine.yml
+│       ├── docker-debian.yml
+│       ├── release.yml
+│       ├── rerun.yaml
+│       └── stale.yml
+├── .vscode/
+│   ├── launch.json
+│   ├── settings.json
+│   └── tasks.json
+├── agents/
+│   ├── agents-feb2026/
+│   │   ├── meshagent_arm
+│   │   ├── meshagent_arm-linaro
+│   │   ├── meshagent_mips
+│   │   ├── meshagent_pogo
+│   │   ├── meshagent_poky
+│   │   ├── meshagent_poky64
+│   │   ├── meshagent_x86
+│   │   ├── meshagent_x86_nokvm
+│   │   ├── meshagent_x86-64
+│   │   ├── meshagent_x86-64_nokvm
+│   │   ├── MeshCmd.exe
+│   │   ├── MeshCmd64.exe
+│   │   ├── MeshCmdARM64.exe
+│   │   ├── MeshService.exe
+│   │   ├── MeshService64.exe
+│   │   └── MeshServiceARM64.exe
+│   ├── modules_meshcmd/
+│   │   ├── amt-apfclient.js
+│   │   ├── amt-ider.js
+│   │   ├── amt-lme.js
+│   │   ├── amt-mei.js
+│   │   ├── amt-redir-duk.js
+│   │   ├── amt-scanner.js
+│   │   ├── amt-sol.js
+│   │   ├── amt-wsman-duk.js
+│   │   ├── amt-wsman.js
+│   │   ├── amt-xml.js
+│   │   ├── amt.js
+│   │   ├── linux-dhcp.js
+│   │   ├── smbios.js
+│   │   ├── sysinfo.js
+│   │   └── win-securitycenter.js
+│   ├── modules_meshcore/
+│   │   ├── amt-apfclient.js
+│   │   ├── amt-lme.js
+│   │   ├── amt-manage.js
+│   │   ├── amt-mei.js
+│   │   ├── computer-identifiers.js
+│   │   ├── coretranslations.json
+│   │   ├── linux-dhcp.js
+│   │   ├── monitor-border.js
+│   │   ├── smbios.js
+│   │   ├── sysinfo.js
+│   │   ├── util-agentlog.js
+│   │   ├── wifi-scanner-windows.js
+│   │   ├── wifi-scanner.js
+│   │   ├── win-console.js
+│   │   ├── win-deskutils.js
+│   │   ├── win-info.js
+│   │   ├── win-securitycenter.js
+│   │   ├── win-terminal.js
+│   │   ├── win-virtual-terminal.js
+│   │   ├── win-volumes.js
+│   │   └── win-wmi-fixed.js
+│   ├── agent-translations.json
+│   ├── agentrecoverycore.js
+│   ├── codesign.cer
+│   ├── compressModules.bat
+│   ├── compressRemove.bat
+│   ├── hashagents.bat
+│   ├── hashagents.js
+│   ├── hashagents.json
+│   ├── meshagent_aarch64
+│   ├── meshagent_aarch64-cortex-a53
+│   ├── meshagent_android.apk
+│   ├── meshagent_arm
+│   ├── meshagent_arm-linaro
+│   ├── meshagent_armhf
+│   ├── meshagent_armhf2
+│   ├── meshagent_freebsd_x86-64
+│   ├── meshagent_linux-armada370-hf
+│   ├── meshagent_mips
+│   ├── meshagent_mips24kc
+│   ├── meshagent_mipsel24kc
+│   ├── meshagent_openbsd_x86-64
+│   ├── meshagent_openwrt_x86_64
+│   ├── meshagent_osx-arm-64
+│   ├── meshagent_osx-universal-64
+│   ├── meshagent_osx-x86-64
+│   ├── meshagent_pogo
+│   ├── meshagent_poky
+│   ├── meshagent_poky64
+│   ├── meshagent_riscv64
+│   ├── meshagent_x86
+│   ├── meshagent_x86_nokvm
+│   ├── meshagent_x86-64
+│   ├── meshagent_x86-64_nokvm
+│   ├── MeshAgentOSXPackager.zip
+│   ├── MeshCentralAssistant.exe
+│   ├── MeshCentralRouter.dmg
+│   ├── MeshCentralRouter.exe
+│   ├── MeshCentralRouterCmd.exe
+│   ├── MeshCentralSatellite.exe
+│   ├── MeshCmd.exe
+│   ├── meshcmd.js
+│   ├── MeshCmd64.exe
+│   ├── MeshCmdARM64.exe
+│   ├── MeshCommander-Small.gz
+│   ├── meshcore_diagnostic.js
+│   ├── meshcore.js
+│   ├── meshinstall-bsd-rcd.sh
+│   ├── meshinstall-initd.sh
+│   ├── meshinstall-linux.js
+│   ├── meshinstall-linux.sh
+│   ├── MeshService.exe
+│   ├── MeshService64.exe
+│   ├── MeshServiceARM64.exe
+│   ├── recoverycore.js
+│   ├── testsuite.js
+│   └── tinycore.js
+├── amt/
+│   ├── amt-ider-module.js
+│   ├── amt-ider.js
+│   ├── amt-redir-mesh.js
+│   ├── amt-setupbin.js
+│   ├── amt-wsman-comm.js
+│   ├── amt-wsman.js
+│   ├── amt-xml.js
+│   └── amt.js
+├── bin/
+│   ├── meshcentral
+│   └── Microsoft.NodejsTools.WebRole.dll
+├── docker/
+│   ├── 01_nodoc
+│   ├── build-all-variants.sh
+│   ├── compose.yaml
+│   ├── config.json.template
+│   ├── Dockerfile
+│   ├── Dockerfile-debian
+│   ├── entrypoint.sh
+│   └── README.md
+├── docs/
+│   └── README.md
+├── emails/
+│   ├── translations/
+│   │   ├── account-check_bs.html
+│   │   ├── account-check_bs.txt
+│   │   ├── account-check_cs.html
+│   │   ├── account-check_cs.txt
+│   │   ├── account-check_da.html
+│   │   ├── account-check_da.txt
+│   │   ├── account-check_de.html
+│   │   ├── account-check_de.txt
+│   │   ├── account-check_es.html
+│   │   ├── account-check_es.txt
+│   │   ├── account-check_fi.html
+│   │   ├── account-check_fi.txt
+│   │   ├── account-check_fr.html
+│   │   ├── account-check_fr.txt
+│   │   ├── account-check_hi.html
+│   │   ├── account-check_hi.txt
+│   │   ├── account-check_hu.html
+│   │   ├── account-check_hu.txt
+│   │   ├── account-check_it.html
+│   │   ├── account-check_it.txt
+│   │   ├── account-check_ja.html
+│   │   ├── account-check_ja.txt
+│   │   ├── account-check_ko.html
+│   │   ├── account-check_ko.txt
+│   │   ├── account-check_nl.html
+│   │   ├── account-check_nl.txt
+│   │   ├── account-check_pl.html
+│   │   ├── account-check_pl.txt
+│   │   ├── account-check_pt-br.html
+│   │   ├── account-check_pt-br.txt
+│   │   ├── account-check_pt.html
+│   │   ├── account-check_pt.txt
+│   │   ├── account-check_ru.html
+│   │   ├── account-check_ru.txt
+│   │   ├── account-check_sv.html
+│   │   ├── account-check_sv.txt
+│   │   ├── account-check_tr.html
+│   │   ├── account-check_tr.txt
+│   │   ├── account-check_zh-chs.html
+│   │   ├── account-check_zh-chs.txt
+│   │   ├── account-check_zh-cht.html
+│   │   ├── account-check_zh-cht.txt
+│   │   ├── account-invite_bs.html
+│   │   ├── account-invite_bs.txt
+│   │   ├── account-invite_cs.html
+│   │   ├── account-invite_cs.txt
+│   │   ├── account-invite_da.html
+│   │   ├── account-invite_da.txt
+│   │   ├── account-invite_de.html
+│   │   ├── account-invite_de.txt
+│   │   ├── account-invite_es.html
+│   │   ├── account-invite_es.txt
+│   │   ├── account-invite_fi.html
+│   │   ├── account-invite_fi.txt
+│   │   ├── account-invite_fr.html
+│   │   ├── account-invite_fr.txt
+│   │   ├── account-invite_hi.html
+│   │   ├── account-invite_hi.txt
+│   │   ├── account-invite_hu.html
+│   │   ├── account-invite_hu.txt
+│   │   ├── account-invite_it.html
+│   │   ├── account-invite_it.txt
+│   │   ├── account-invite_ja.html
+│   │   ├── account-invite_ja.txt
+│   │   ├── account-invite_ko.html
+│   │   ├── account-invite_ko.txt
+│   │   ├── account-invite_nl.html
+│   │   ├── account-invite_nl.txt
+│   │   ├── account-invite_pl.html
+│   │   ├── account-invite_pl.txt
+│   │   ├── account-invite_pt-br.html
+│   │   ├── account-invite_pt-br.txt
+│   │   ├── account-invite_pt.html
+│   │   ├── account-invite_pt.txt
+│   │   ├── account-invite_ru.html
+│   │   ├── account-invite_ru.txt
+│   │   ├── account-invite_sv.html
+│   │   ├── account-invite_sv.txt
+│   │   ├── account-invite_tr.html
+│   │   ├── account-invite_tr.txt
+│   │   ├── account-invite_zh-chs.html
+│   │   ├── account-invite_zh-chs.txt
+│   │   ├── account-invite_zh-cht.html
+│   │   ├── account-invite_zh-cht.txt
+│   │   ├── account-login_bs.html
+│   │   ├── account-login_bs.txt
+│   │   ├── account-login_cs.html
+│   │   ├── account-login_cs.txt
+│   │   ├── account-login_da.html
+│   │   ├── account-login_da.txt
+│   │   ├── account-login_de.html
+│   │   ├── account-login_de.txt
+│   │   ├── account-login_es.html
+│   │   ├── account-login_es.txt
+│   │   ├── account-login_fi.html
+│   │   ├── account-login_fi.txt
+│   │   ├── account-login_fr.html
+│   │   ├── account-login_fr.txt
+│   │   ├── account-login_hi.html
+│   │   ├── account-login_hi.txt
+│   │   ├── account-login_hu.html
+│   │   ├── account-login_hu.txt
+│   │   ├── account-login_it.html
+│   │   ├── account-login_it.txt
+│   │   ├── account-login_ja.html
+│   │   ├── account-login_ja.txt
+│   │   ├── account-login_ko.html
+│   │   ├── account-login_ko.txt
+│   │   ├── account-login_nl.html
+│   │   ├── account-login_nl.txt
+│   │   ├── account-login_pl.html
+│   │   ├── account-login_pl.txt
+│   │   ├── account-login_pt-br.html
+│   │   ├── account-login_pt-br.txt
+│   │   ├── account-login_pt.html
+│   │   ├── account-login_pt.txt
+│   │   ├── account-login_ru.html
+│   │   ├── account-login_ru.txt
+│   │   ├── account-login_sv.html
+│   │   ├── account-login_sv.txt
+│   │   ├── account-login_tr.html
+│   │   ├── account-login_tr.txt
+│   │   ├── account-login_zh-chs.html
+│   │   ├── account-login_zh-chs.txt
+│   │   ├── account-login_zh-cht.html
+│   │   ├── account-login_zh-cht.txt
+│   │   ├── account-reset_bs.html
+│   │   ├── account-reset_bs.txt
+│   │   ├── account-reset_cs.html
+│   │   ├── account-reset_cs.txt
+│   │   ├── account-reset_da.html
+│   │   ├── account-reset_da.txt
+│   │   ├── account-reset_de.html
+│   │   ├── account-reset_de.txt
+│   │   ├── account-reset_es.html
+│   │   ├── account-reset_es.txt
+│   │   ├── account-reset_fi.html
+│   │   ├── account-reset_fi.txt
+│   │   ├── account-reset_fr.html
+│   │   ├── account-reset_fr.txt
+│   │   ├── account-reset_hi.html
+│   │   ├── account-reset_hi.txt
+│   │   ├── account-reset_hu.html
+│   │   ├── account-reset_hu.txt
+│   │   ├── account-reset_it.html
+│   │   ├── account-reset_it.txt
+│   │   ├── account-reset_ja.html
+│   │   ├── account-reset_ja.txt
+│   │   ├── account-reset_ko.html
+│   │   ├── account-reset_ko.txt
+│   │   ├── account-reset_nl.html
+│   │   ├── account-reset_nl.txt
+│   │   ├── account-reset_pl.html
+│   │   ├── account-reset_pl.txt
+│   │   ├── account-reset_pt-br.html
+│   │   ├── account-reset_pt-br.txt
+│   │   ├── account-reset_pt.html
+│   │   ├── account-reset_pt.txt
+│   │   ├── account-reset_ru.html
+│   │   ├── account-reset_ru.txt
+│   │   ├── account-reset_sv.html
+│   │   ├── account-reset_sv.txt
+│   │   ├── account-reset_tr.html
+│   │   ├── account-reset_tr.txt
+│   │   ├── account-reset_zh-chs.html
+│   │   ├── account-reset_zh-chs.txt
+│   │   ├── account-reset_zh-cht.html
+│   │   ├── account-reset_zh-cht.txt
+│   │   ├── device-help_bs.html
+│   │   ├── device-help_bs.txt
+│   │   ├── device-help_cs.html
+│   │   ├── device-help_cs.txt
+│   │   ├── device-help_da.html
+│   │   ├── device-help_da.txt
+│   │   ├── device-help_de.html
+│   │   ├── device-help_de.txt
+│   │   ├── device-help_es.html
+│   │   ├── device-help_es.txt
+│   │   ├── device-help_fi.html
+│   │   ├── device-help_fi.txt
+│   │   ├── device-help_fr.html
+│   │   ├── device-help_fr.txt
+│   │   ├── device-help_hi.html
+│   │   ├── device-help_hi.txt
+│   │   ├── device-help_hu.html
+│   │   ├── device-help_hu.txt
+│   │   ├── device-help_it.html
+│   │   ├── device-help_it.txt
+│   │   ├── device-help_ja.html
+│   │   ├── device-help_ja.txt
+│   │   ├── device-help_ko.html
+│   │   ├── device-help_ko.txt
+│   │   ├── device-help_nl.html
+│   │   ├── device-help_nl.txt
+│   │   ├── device-help_pl.html
+│   │   ├── device-help_pl.txt
+│   │   ├── device-help_pt-br.html
+│   │   ├── device-help_pt-br.txt
+│   │   ├── device-help_pt.html
+│   │   ├── device-help_pt.txt
+│   │   ├── device-help_ru.html
+│   │   ├── device-help_ru.txt
+│   │   ├── device-help_sv.html
+│   │   ├── device-help_sv.txt
+│   │   ├── device-help_tr.html
+│   │   ├── device-help_tr.txt
+│   │   ├── device-help_zh-chs.html
+│   │   ├── device-help_zh-chs.txt
+│   │   ├── device-help_zh-cht.html
+│   │   ├── device-help_zh-cht.txt
+│   │   ├── device-notify_bs.html
+│   │   ├── device-notify_bs.txt
+│   │   ├── device-notify_cs.html
+│   │   ├── device-notify_cs.txt
+│   │   ├── device-notify_da.html
+│   │   ├── device-notify_da.txt
+│   │   ├── device-notify_de.html
+│   │   ├── device-notify_de.txt
+│   │   ├── device-notify_es.html
+│   │   ├── device-notify_es.txt
+│   │   ├── device-notify_fi.html
+│   │   ├── device-notify_fi.txt
+│   │   ├── device-notify_fr.html
+│   │   ├── device-notify_fr.txt
+│   │   ├── device-notify_hi.html
+│   │   ├── device-notify_hi.txt
+│   │   ├── device-notify_hu.html
+│   │   ├── device-notify_hu.txt
+│   │   ├── device-notify_it.html
+│   │   ├── device-notify_it.txt
+│   │   ├── device-notify_ja.html
+│   │   ├── device-notify_ja.txt
+│   │   ├── device-notify_ko.html
+│   │   ├── device-notify_ko.txt
+│   │   ├── device-notify_nl.html
+│   │   ├── device-notify_nl.txt
+│   │   ├── device-notify_pl.html
+│   │   ├── device-notify_pl.txt
+│   │   ├── device-notify_pt-br.html
+│   │   ├── device-notify_pt-br.txt
+│   │   ├── device-notify_pt.html
+│   │   ├── device-notify_pt.txt
+│   │   ├── device-notify_ru.html
+│   │   ├── device-notify_ru.txt
+│   │   ├── device-notify_sv.html
+│   │   ├── device-notify_sv.txt
+│   │   ├── device-notify_tr.html
+│   │   ├── device-notify_tr.txt
+│   │   ├── device-notify_zh-chs.html
+│   │   ├── device-notify_zh-chs.txt
+│   │   ├── device-notify_zh-cht.html
+│   │   ├── device-notify_zh-cht.txt
+│   │   ├── mesh-invite_bs.html
+│   │   ├── mesh-invite_bs.txt
+│   │   ├── mesh-invite_cs.html
+│   │   ├── mesh-invite_cs.txt
+│   │   ├── mesh-invite_da.html
+│   │   ├── mesh-invite_da.txt
+│   │   ├── mesh-invite_de.html
+│   │   ├── mesh-invite_de.txt
+│   │   ├── mesh-invite_es.html
+│   │   ├── mesh-invite_es.txt
+│   │   ├── mesh-invite_fi.html
+│   │   ├── mesh-invite_fi.txt
+│   │   ├── mesh-invite_fr.html
+│   │   ├── mesh-invite_fr.txt
+│   │   ├── mesh-invite_hi.html
+│   │   ├── mesh-invite_hi.txt
+│   │   ├── mesh-invite_hu.html
+│   │   ├── mesh-invite_hu.txt
+│   │   ├── mesh-invite_it.html
+│   │   ├── mesh-invite_it.txt
+│   │   ├── mesh-invite_ja.html
+│   │   ├── mesh-invite_ja.txt
+│   │   ├── mesh-invite_ko.html
+│   │   ├── mesh-invite_ko.txt
+│   │   ├── mesh-invite_nl.html
+│   │   ├── mesh-invite_nl.txt
+│   │   ├── mesh-invite_pl.html
+│   │   ├── mesh-invite_pl.txt
+│   │   ├── mesh-invite_pt-br.html
+│   │   ├── mesh-invite_pt-br.txt
+│   │   ├── mesh-invite_pt.html
+│   │   ├── mesh-invite_pt.txt
+│   │   ├── mesh-invite_ru.html
+│   │   ├── mesh-invite_ru.txt
+│   │   ├── mesh-invite_sv.html
+│   │   ├── mesh-invite_sv.txt
+│   │   ├── mesh-invite_tr.html
+│   │   ├── mesh-invite_tr.txt
+│   │   ├── mesh-invite_zh-chs.html
+│   │   ├── mesh-invite_zh-chs.txt
+│   │   ├── mesh-invite_zh-cht.html
+│   │   ├── mesh-invite_zh-cht.txt
+│   │   ├── sms-messages_bs.txt
+│   │   ├── sms-messages_cs.txt
+│   │   ├── sms-messages_da.txt
+│   │   ├── sms-messages_de.txt
+│   │   ├── sms-messages_es.txt
+│   │   ├── sms-messages_fi.txt
+│   │   ├── sms-messages_fr.txt
+│   │   ├── sms-messages_hi.txt
+│   │   ├── sms-messages_hu.txt
+│   │   ├── sms-messages_it.txt
+│   │   ├── sms-messages_ja.txt
+│   │   ├── sms-messages_ko.txt
+│   │   ├── sms-messages_nl.txt
+│   │   ├── sms-messages_pl.txt
+│   │   ├── sms-messages_pt-br.txt
+│   │   ├── sms-messages_pt.txt
+│   │   ├── sms-messages_ru.txt
+│   │   ├── sms-messages_sv.txt
+│   │   ├── sms-messages_tr.txt
+│   │   ├── sms-messages_zh-chs.txt
+│   │   └── sms-messages_zh-cht.txt
+│   ├── account-check.html
+│   ├── account-check.txt
+│   ├── account-invite.html
+│   ├── account-invite.txt
+│   ├── account-login.html
+│   ├── account-login.txt
+│   ├── account-reset.html
+│   ├── account-reset.txt
+│   ├── device-help.html
+│   ├── device-help.txt
+│   ├── device-notify.html
+│   ├── device-notify.txt
+│   ├── mesh-invite.html
+│   ├── mesh-invite.txt
+│   └── sms-messages.txt
+├── public/
+│   ├── images/
+│   │   ├── details/
+│   │   │   ├── amt32.png
+│   │   │   ├── amt64.png
+│   │   │   ├── battery32.png
+│   │   │   ├── battery64.png
+│   │   │   ├── chip32.png
+│   │   │   ├── chip64.png
+│   │   │   ├── graph32.png
+│   │   │   ├── graph64.png
+│   │   │   ├── meshagent32.png
+│   │   │   ├── meshagent64.png
+│   │   │   ├── mobile128.png
+│   │   │   ├── mobile32.png
+│   │   │   ├── mobile64.png
+│   │   │   ├── motherboard32.png
+│   │   │   ├── motherboard64.png
+│   │   │   ├── networking32.png
+│   │   │   ├── networking64.png
+│   │   │   ├── ram32.png
+│   │   │   ├── ram64.png
+│   │   │   ├── software32.png
+│   │   │   ├── software64.png
+│   │   │   ├── storage32.png
+│   │   │   ├── storage64.png
+│   │   │   ├── system32.png
+│   │   │   ├── system64.png
+│   │   │   ├── tpm32.png
+│   │   │   └── tpm64.png
+│   │   ├── login/
+│   │   │   ├── 2fa-duo-48.png
+│   │   │   ├── 2fa-duo-96.png
+│   │   │   ├── 2fa-key-48.png
+│   │   │   ├── 2fa-key-96.png
+│   │   │   ├── 2fa-mail-48.png
+│   │   │   ├── 2fa-mail-96.png
+│   │   │   ├── 2fa-messaging-48.png
+│   │   │   ├── 2fa-messaging-96.png
+│   │   │   ├── 2fa-push-48.png
+│   │   │   ├── 2fa-push-96.png
+│   │   │   ├── 2fa-sms-48.png
+│   │   │   ├── 2fa-sms-96.png
+│   │   │   ├── azure32.png
+│   │   │   ├── azure64.png
+│   │   │   ├── back.png
+│   │   │   ├── file48.png
+│   │   │   ├── generic32.png
+│   │   │   ├── generic64.png
+│   │   │   ├── github32.png
+│   │   │   ├── github64.png
+│   │   │   ├── google32.png
+│   │   │   ├── google64.png
+│   │   │   ├── intel32.png
+│   │   │   ├── intel64.png
+│   │   │   ├── jumpcloud32.png
+│   │   │   ├── jumpcloud64.png
+│   │   │   ├── oidc32.png
+│   │   │   ├── oidc64.png
+│   │   │   ├── push-150.png
+│   │   │   ├── push-300.png
+│   │   │   ├── reddit32.png
+│   │   │   ├── reddit64.png
+│   │   │   ├── twitter32.png
+│   │   │   └── twitter64.png
+│   │   ├── notify/
+│   │   │   ├── icons128-0.png
+│   │   │   ├── icons128-1.png
+│   │   │   ├── icons128-2.png
+│   │   │   ├── icons128-3.png
+│   │   │   ├── icons128-4.png
+│   │   │   ├── icons128-5.png
+│   │   │   ├── icons128-6.png
+│   │   │   ├── icons128-7.png
+│   │   │   └── icons128-8.png
+│   │   ├── webp/
+│   │   │   ├── group-256.webp
+│   │   │   ├── icons100.webp
+│   │   │   ├── icons16.webp
+│   │   │   ├── icons32.webp
+│   │   │   ├── icons50.webp
+│   │   │   ├── leftbar-128.webp
+│   │   │   ├── leftbar-64.webp
+│   │   │   ├── mainwelcome.webp
+│   │   │   ├── mesh-256.webp
+│   │   │   ├── notify24.webp
+│   │   │   ├── notify48.webp
+│   │   │   └── user-256.webp
+│   │   ├── 3bars-30.png
+│   │   ├── 3dots-24.gif
+│   │   ├── 3dots-48.gif
+│   │   ├── amazon-appstore-140.png
+│   │   ├── amazon-appstore-280.png
+│   │   ├── android-40.png
+│   │   ├── android-80.png
+│   │   ├── assistant-100.png
+│   │   ├── assistant-200.png
+│   │   ├── assistant-400.png
+│   │   ├── assistant2-100.png
+│   │   ├── assistant2-200.png
+│   │   ├── assistant2-400.png
+│   │   ├── batteries24.png
+│   │   ├── batteries48.png
+│   │   ├── c1.png
+│   │   ├── c2.png
+│   │   ├── c3.png
+│   │   ├── checkbox60.png
+│   │   ├── clipboard-128.png
+│   │   ├── computers-128.png
+│   │   ├── dot.png
+│   │   ├── duo-2fa-250-disable.png
+│   │   ├── duo-2fa-250.png
+│   │   ├── gears-128.png
+│   │   ├── google-play-140.png
+│   │   ├── google-play-280.png
+│   │   ├── googledrive-48.png
+│   │   ├── group-256.png
+│   │   ├── hardware-key-OTP-24.png
+│   │   ├── hardware-key-WebAuthn-24.png
+│   │   ├── hardware-keypress-120.png
+│   │   ├── icon-addnew.png
+│   │   ├── icon-background-red.png
+│   │   ├── icon-background.png
+│   │   ├── icon-camera.png
+│   │   ├── icon-chat.png
+│   │   ├── icon-clipboard-in.png
+│   │   ├── icon-clipboard-out.png
+│   │   ├── icon-clipboard.png
+│   │   ├── icon-collapse.png
+│   │   ├── icon-expand.png
+│   │   ├── icon-film-red.png
+│   │   ├── icon-film.png
+│   │   ├── icon-gear.png
+│   │   ├── icon-graph.png
+│   │   ├── icon-help-notify-10.png
+│   │   ├── icon-help-notify-16.png
+│   │   ├── icon-help-notify-40.png
+│   │   ├── icon-installmesh.png
+│   │   ├── icon-keylock-red.png
+│   │   ├── icon-keylock.png
+│   │   ├── icon-lock.png
+│   │   ├── icon-manage.png
+│   │   ├── icon-monitor1.png
+│   │   ├── icon-monitor2.png
+│   │   ├── icon-notify.png
+│   │   ├── icon-play.png
+│   │   ├── icon-refresh.png
+│   │   ├── icon-relay - Copy.png
+│   │   ├── icon-relay-notify-40.png
+│   │   ├── icon-relay-notify.png
+│   │   ├── icon-relay-notify10.png
+│   │   ├── icon-relay-notifyx.png
+│   │   ├── icon-relay-notifyx10.png
+│   │   ├── icon-relay.png
+│   │   ├── icon-remove.png
+│   │   ├── icon-share.png
+│   │   ├── icon-share2.png
+│   │   ├── icon-star-notify-10.png
+│   │   ├── icon-star-notify-16.png
+│   │   ├── icon-star-notify-40.png
+│   │   ├── icon-star-notify.png
+│   │   ├── icon-url.png
+│   │   ├── icon-url2.png
+│   │   ├── icons100.png
+│   │   ├── icons16.png
+│   │   ├── icons256-1-1.png
+│   │   ├── icons256-2-1.png
+│   │   ├── icons256-3-1.png
+│   │   ├── icons256-4-1.png
+│   │   ├── icons256-5-1.png
+│   │   ├── icons256-6-1.png
+│   │   ├── icons256-7-1.png
+│   │   ├── icons256-8-1.png
+│   │   ├── icons32.png
+│   │   ├── icons50.png
+│   │   ├── icons64.png
+│   │   ├── images16.png
+│   │   ├── info.png
+│   │   ├── iplocation.png
+│   │   ├── key12.png
+│   │   ├── key16.png
+│   │   ├── left-30.png
+│   │   ├── leftbar-128.png
+│   │   ├── leftbar-62.jpg
+│   │   ├── leftbar-64.png
+│   │   ├── link1.png
+│   │   ├── link2.png
+│   │   ├── link3.png
+│   │   ├── link4.png
+│   │   ├── link5.png
+│   │   ├── link6.png
+│   │   ├── link7.png
+│   │   ├── logoback.png
+│   │   ├── macosagent.png
+│   │   ├── mail12.png
+│   │   ├── mainwelcome.jpg
+│   │   ├── mapmarker-gps.png
+│   │   ├── mapmarker-ip.png
+│   │   ├── mapmarker-user.png
+│   │   ├── mapmarker-wifi.png
+│   │   ├── mapmarker.png
+│   │   ├── mesh-256.png
+│   │   ├── MeshComm64b.png
+│   │   ├── meshicon100.png
+│   │   ├── meshicon16.png
+│   │   ├── meshicon256.png
+│   │   ├── meshicon50.png
+│   │   ├── messaging12.png
+│   │   ├── messaging40.png
+│   │   ├── messenger-icons.png
+│   │   ├── messenger.png
+│   │   ├── messenger16.png
+│   │   ├── messenger32.png
+│   │   ├── mobile-desk-exit.png
+│   │   ├── mobile-desk-keyboard-close.png
+│   │   ├── mobile-desk-keyboard-open.png
+│   │   ├── mobile-desk-menu-close.png
+│   │   ├── mobile-desk-menu-open.png
+│   │   ├── mobile-desk-mouse-left.pdn
+│   │   ├── mobile-desk-mouse-left.png
+│   │   ├── mobile-desk-mouse-right.png
+│   │   ├── mobile-desk-mouse.png
+│   │   ├── mobile-desk-scale-in.png
+│   │   ├── mobile-desk-scale-out.png
+│   │   ├── monitor32.png
+│   │   ├── notify16.png
+│   │   ├── notify24.png
+│   │   ├── notify48.png
+│   │   ├── padlock12.png
+│   │   ├── phone12.png
+│   │   ├── phone80.png
+│   │   ├── plugin.png
+│   │   ├── plugin24.png
+│   │   ├── ram.png
+│   │   ├── ram2.png
+│   │   ├── rcheckbox60.png
+│   │   ├── report.png
+│   │   ├── report60.png
+│   │   ├── right-30.png
+│   │   ├── server-200.jpg
+│   │   ├── server-256.png
+│   │   ├── servericon120.png
+│   │   ├── servericon64.png
+│   │   ├── sharing-32.png
+│   │   ├── sharing-64.png
+│   │   ├── trash.png
+│   │   ├── usbkey70.png
+│   │   ├── user-128.png
+│   │   ├── user-256.png
+│   │   ├── user-32.png
+│   │   ├── user-32x.png
+│   │   ├── user-50.png
+│   │   ├── user-64.png
+│   │   ├── user-64x.png
+│   │   ├── views.png
+│   │   ├── winagent.png
+│   │   ├── x16.png
+│   │   └── x32.png
+│   ├── js/
+│   │   └── ui-components.js
+│   ├── mstsc/
+│   │   ├── canvas.js
+│   │   ├── client.js
+│   │   ├── keyboard.js
+│   │   ├── LICENSE
+│   │   ├── mstsc.js
+│   │   └── rle.js
+│   ├── novnc/
+│   │   ├── app/
+│   │   │   ├── images/
+│   │   │   │   ├── icons/
+│   │   │   │   │   ├── Makefile
+│   │   │   │   │   ├── novnc-icon-sm.svg
+│   │   │   │   │   ├── novnc-icon.svg
+│   │   │   │   │   ├── novnc-ios-120.png
+│   │   │   │   │   ├── novnc-ios-152.png
+│   │   │   │   │   ├── novnc-ios-167.png
+│   │   │   │   │   ├── novnc-ios-180.png
+│   │   │   │   │   ├── novnc-ios-40.png
+│   │   │   │   │   ├── novnc-ios-58.png
+│   │   │   │   │   ├── novnc-ios-60.png
+│   │   │   │   │   ├── novnc-ios-80.png
+│   │   │   │   │   ├── novnc-ios-87.png
+│   │   │   │   │   ├── novnc-ios-icon.svg
+│   │   │   │   │   └── novnc.ico
+│   │   │   │   ├── alt.svg
+│   │   │   │   ├── clipboard.svg
+│   │   │   │   ├── connect.svg
+│   │   │   │   ├── ctrl.svg
+│   │   │   │   ├── ctrlaltdel.svg
+│   │   │   │   ├── disconnect.svg
+│   │   │   │   ├── drag.svg
+│   │   │   │   ├── error.svg
+│   │   │   │   ├── esc.svg
+│   │   │   │   ├── expander.svg
+│   │   │   │   ├── fullscreen.svg
+│   │   │   │   ├── handle_bg.svg
+│   │   │   │   ├── handle.svg
+│   │   │   │   ├── info.svg
+│   │   │   │   ├── keyboard.svg
+│   │   │   │   ├── power.svg
+│   │   │   │   ├── settings.svg
+│   │   │   │   ├── tab.svg
+│   │   │   │   ├── toggleextrakeys.svg
+│   │   │   │   ├── warning.svg
+│   │   │   │   └── windows.svg
+│   │   │   ├── locale/
+│   │   │   │   ├── cs.json
+│   │   │   │   ├── de.json
+│   │   │   │   ├── el.json
+│   │   │   │   ├── es.json
+│   │   │   │   ├── fr.json
+│   │   │   │   ├── it.json
+│   │   │   │   ├── ja.json
+│   │   │   │   ├── ko.json
+│   │   │   │   ├── nl.json
+│   │   │   │   ├── pl.json
+│   │   │   │   ├── pt_BR.json
+│   │   │   │   ├── README
+│   │   │   │   ├── ru.json
+│   │   │   │   ├── sv.json
+│   │   │   │   ├── tr.json
+│   │   │   │   ├── zh_CN.json
+│   │   │   │   └── zh_TW.json
+│   │   │   ├── sounds/
+│   │   │   │   ├── bell.mp3
+│   │   │   │   ├── bell.oga
+│   │   │   │   └── CREDITS
+│   │   │   ├── styles/
+│   │   │   │   ├── base.css
+│   │   │   │   ├── input.css
+│   │   │   │   ├── Orbitron700.ttf
+│   │   │   │   └── Orbitron700.woff
+│   │   │   ├── error-handler.js
+│   │   │   ├── localization.js
+│   │   │   ├── ui.js
+│   │   │   └── webutil.js
+│   │   ├── core/
+│   │   │   ├── crypto/
+│   │   │   │   ├── aes.js
+│   │   │   │   ├── bigint.js
+│   │   │   │   ├── crypto.js
+│   │   │   │   ├── des.js
+│   │   │   │   ├── dh.js
+│   │   │   │   ├── md5.js
+│   │   │   │   └── rsa.js
+│   │   │   ├── decoders/
+│   │   │   │   ├── copyrect.js
+│   │   │   │   ├── hextile.js
+│   │   │   │   ├── jpeg.js
+│   │   │   │   ├── raw.js
+│   │   │   │   ├── rre.js
+│   │   │   │   ├── tight.js
+│   │   │   │   ├── tightpng.js
+│   │   │   │   └── zrle.js
+│   │   │   ├── input/
+│   │   │   │   ├── domkeytable.js
+│   │   │   │   ├── fixedkeys.js
+│   │   │   │   ├── gesturehandler.js
+│   │   │   │   ├── keyboard.js
+│   │   │   │   ├── keysym.js
+│   │   │   │   ├── keysymdef.js
+│   │   │   │   ├── util.js
+│   │   │   │   ├── vkeys.js
+│   │   │   │   └── xtscancodes.js
+│   │   │   ├── util/
+│   │   │   │   ├── browser.js
+│   │   │   │   ├── cursor.js
+│   │   │   │   ├── element.js
+│   │   │   │   ├── events.js
+│   │   │   │   ├── eventtarget.js
+│   │   │   │   ├── int.js
+│   │   │   │   ├── logging.js
+│   │   │   │   ├── md5.js
+│   │   │   │   └── strings.js
+│   │   │   ├── base64.js
+│   │   │   ├── deflator.js
+│   │   │   ├── des.js
+│   │   │   ├── display.js
+│   │   │   ├── encodings.js
+│   │   │   ├── inflator.js
+│   │   │   ├── ra2.js
+│   │   │   ├── rfb.js
+│   │   │   └── websock.js
+│   │   ├── vendor/
+│   │   │   └── pako/
+│   │   │       ├── lib/
+│   │   │       │   ├── utils/
+│   │   │       │   │   └── common.js
+│   │   │       │   └── zlib/
+│   │   │       │       ├── adler32.js
+│   │   │       │       ├── constants.js
+│   │   │       │       ├── crc32.js
+│   │   │       │       ├── deflate.js
+│   │   │       │       ├── gzheader.js
+│   │   │       │       ├── inffast.js
+│   │   │       │       ├── inflate.js
+│   │   │       │       ├── inftrees.js
+│   │   │       │       ├── messages.js
+│   │   │       │       ├── trees.js
+│   │   │       │       └── zstream.js
+│   │   │       ├── LICENSE
+│   │   │       └── README.md
+│   │   ├── LICENSE.txt
+│   │   ├── package.json
+│   │   └── vnc.html
+│   ├── samples/
+│   │   ├── relay.htm
+│   │   └── relay.js
+│   ├── scripts/
+│   │   ├── fontawesome/
+│   │   │   ├── all-min.js
+│   │   │   ├── all.js
+│   │   │   └── all.min.js
+│   │   ├── themes/
+│   │   │   └── theme-switcher.js
+│   │   ├── agent-desktop-0.0.2-min.js
+│   │   ├── agent-desktop-0.0.2.js
+│   │   ├── agent-rdp-0.0.1-min.js
+│   │   ├── agent-rdp-0.0.1.js
+│   │   ├── agent-redir-rtc-0.1.0-min.js
+│   │   ├── agent-redir-rtc-0.1.0.js
+│   │   ├── agent-redir-ws-0.1.1-min.js
+│   │   ├── agent-redir-ws-0.1.1.js
+│   │   ├── amt-0.2.0-min.js
+│   │   ├── amt-0.2.0.js
+│   │   ├── amt-desktop-0.0.2-min.js
+│   │   ├── amt-desktop-0.0.2.js
+│   │   ├── amt-ider-ws-0.0.1-min.js
+│   │   ├── amt-ider-ws-0.0.1.js
+│   │   ├── amt-redir-ws-0.1.0-min.js
+│   │   ├── amt-redir-ws-0.1.0.js
+│   │   ├── amt-script-0.2.0-min.js
+│   │   ├── amt-script-0.2.0.js
+│   │   ├── amt-setupbin-0.1.0-min.js
+│   │   ├── amt-setupbin-0.1.0.js
+│   │   ├── amt-terminal-0.0.2-min.js
+│   │   ├── amt-terminal-0.0.2.js
+│   │   ├── amt-wsman-0.2.0-min.js
+│   │   ├── amt-wsman-0.2.0.js
+│   │   ├── amt-wsman-ws-0.2.0-min.js
+│   │   ├── amt-wsman-ws-0.2.0.js
+│   │   ├── bootstrap-min.js
+│   │   ├── bootstrap.js
+│   │   ├── bootstrap.js.map
+│   │   ├── bootstrap.min.js.map
+│   │   ├── chart.umd.js.map
+│   │   ├── chartjs-adapter-moment-min.js
+│   │   ├── chartjs-adapter-moment.js
+│   │   ├── charts-min.js
+│   │   ├── charts.js
+│   │   ├── cira_cleanup.mescript
+│   │   ├── cira_setup_script_dns.mescript
+│   │   ├── cira_setup_script_ip.mescript
+│   │   ├── common-0.0.1-min.js
+│   │   ├── common-0.0.1.js
+│   │   ├── custom.js
+│   │   ├── filesaver.js
+│   │   ├── filesaver.min.js
+│   │   ├── flatpickr.js
+│   │   ├── jquery-min.js
+│   │   ├── jquery.js
+│   │   ├── marked-min.js
+│   │   ├── marked.js
+│   │   ├── marked.umd.js.map
+│   │   ├── meshcentral-min.js
+│   │   ├── meshcentral.js
+│   │   ├── moment-min.js
+│   │   ├── moment.js
+│   │   ├── ol-min.js
+│   │   ├── ol.js
+│   │   ├── ol3-contextmenu-min.js
+│   │   ├── ol3-contextmenu.js
+│   │   ├── purify-min.js
+│   │   ├── purify.js
+│   │   ├── purify.js.map
+│   │   ├── purify.min.js.map
+│   │   ├── qrcode.min.js
+│   │   ├── select2.full.min.js
+│   │   ├── u2f-api-min.js
+│   │   ├── u2f-api.js
+│   │   ├── webm-writer.js
+│   │   ├── xterm-addon-fit-min.js
+│   │   ├── xterm-addon-fit.js
+│   │   ├── xterm-addon-fit.js.map
+│   │   ├── xterm-addon-image-min.js
+│   │   ├── xterm-addon-image.js
+│   │   ├── xterm-addon-image.js.map
+│   │   ├── xterm-min.js
+│   │   ├── xterm.js
+│   │   ├── xterm.js.map
+│   │   ├── zlib-adler32-min.js
+│   │   ├── zlib-adler32.js
+│   │   ├── zlib-crc32-min.js
+│   │   ├── zlib-crc32.js
+│   │   ├── zlib-inflate-min.js
+│   │   ├── zlib-inflate.js
+│   │   ├── zlib-min.js
+│   │   └── zlib.js
+│   ├── sounds/
+│   │   ├── chimes.mp3
+│   │   └── desktop.ini
+│   ├── styles/
+│   │   ├── themes/
+│   │   │   ├── cerulean/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── cosmo/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── cyborg/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── darkly/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── flatly/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── journal/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── litera/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── lumen/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── lux/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── materia/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── minty/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── morph/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── pulse/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── sandstone/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── simplex/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── sketchy/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── solar/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── spacelab/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── united/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── vapor/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   ├── yeti/
+│   │   │   │   └── bootstrap-min.css
+│   │   │   └── zephyr/
+│   │   │       └── bootstrap-min.css
+│   │   ├── bootstrap-min.css
+│   │   ├── bootstrap.css
+│   │   ├── bootstrap.css.map
+│   │   ├── bootstrap.min.css.map
+│   │   ├── custom.css
+│   │   ├── flatpickr.min.css
+│   │   ├── messenger.css
+│   │   ├── ol.css
+│   │   ├── ol3-contextmenu.min.css
+│   │   ├── select2-bootstrap-5-theme.min.css
+│   │   ├── select2.min.css
+│   │   ├── style-bootstrap.css
+│   │   ├── style-sharing.css
+│   │   ├── style.css
+│   │   └── xterm.css
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── commander-de.htm
+│   ├── commander-es.htm
+│   ├── commander-fr.htm
+│   ├── commander-it.htm
+│   ├── commander-ja.htm
+│   ├── commander-ko.htm
+│   ├── commander-nl.htm
+│   ├── commander-pt.htm
+│   ├── commander-ru.htm
+│   ├── commander-zh-chs.htm
+│   ├── commander.htm
+│   ├── compress.wcc
+│   ├── favicon-16x16.png
+│   ├── favicon-303x303.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── minify.bat
+│   ├── robots.txt
+│   ├── scriptblocks.txt
+│   ├── serviceworker.js
+│   ├── translate.bat
+│   └── translator.htm
+├── rdp/
+│   ├── asn1/
+│   │   ├── ber.js
+│   │   ├── index.js
+│   │   ├── spec.js
+│   │   └── univ.js
+│   ├── core/
+│   │   ├── error.js
+│   │   ├── index.js
+│   │   ├── layer.js
+│   │   ├── log.js
+│   │   ├── rle.js
+│   │   └── type.js
+│   ├── protocol/
+│   │   ├── pdu/
+│   │   │   ├── caps.js
+│   │   │   ├── cliprdr.js
+│   │   │   ├── data.js
+│   │   │   ├── global.js
+│   │   │   ├── index.js
+│   │   │   ├── lic.js
+│   │   │   └── sec.js
+│   │   ├── t125/
+│   │   │   ├── gcc.js
+│   │   │   ├── index.js
+│   │   │   ├── mcs.js
+│   │   │   └── per.js
+│   │   ├── cert.js
+│   │   ├── index.js
+│   │   ├── nla.js
+│   │   ├── rdp.js
+│   │   ├── tpkt.js
+│   │   └── x224.js
+│   ├── security/
+│   │   ├── index.js
+│   │   ├── jsbn.js
+│   │   ├── md4.js
+│   │   ├── rc4.js
+│   │   ├── rsa.js
+│   │   └── x509.js
+│   ├── index.js
+│   ├── LICENSE
+│   └── README.md
+├── translate/
+│   ├── readme.txt
+│   ├── translate-node14.bat
+│   ├── translate.bat
+│   ├── translate.js
+│   └── translate.json
+├── views/
+│   ├── agentinvite.handlebars
+│   ├── default-mobile.handlebars
+│   ├── default.handlebars
+│   ├── default3.handlebars
+│   ├── download.handlebars
+│   ├── download2.handlebars
+│   ├── error404-mobile.handlebars
+│   ├── error404.handlebars
+│   ├── error4042.handlebars
+│   ├── invite.handlebars
+│   ├── login-mobile.handlebars
+│   ├── login.handlebars
+│   ├── login2.handlebars
+│   ├── message.handlebars
+│   ├── message2.handlebars
+│   ├── messenger.handlebars
+│   ├── mstsc.handlebars
+│   ├── player.handlebars
+│   ├── sharing-mobile.handlebars
+│   ├── sharing.handlebars
+│   ├── ssh.handlebars
+│   ├── terms-mobile.handlebars
+│   ├── terms.handlebars
+│   └── xterm.handlebars
+├── .dockerignore
+├── .gitattributes
+├── .gitignore
+├── .npmrc
+├── amt-ider.js
+├── amtevents.js
+├── amtmanager.js
+├── amtprovisioningserver.js
+├── amtscanner.js
+├── amtscript.js
+├── apprelays.js
+├── authenticode.js
+├── certoperations.js
+├── CODE_OF_CONDUCT.md
+├── common.js
+├── CreateSourcePackage.bat
+├── crowdsec.js
+├── db.js
+├── dependencies.txt
+├── exeHandler.js
+├── firebase.js
+├── interceptor.js
+├── letsencrypt.js
+├── LICENSE
+├── mcrec.js
+├── meshaccelerator.js
+├── meshagent.js
+├── meshbot.js
+├── meshcentral-config-schema.json
+├── meshcentral.js
+├── MeshCentral.sln
+├── MeshCentralServer.njsproj
+├── meshctrl.js
+├── meshdesktopmultiplex.js
+├── meshdevicefile.js
+├── meshipkvm.js
+├── meshmail.js
+├── meshmessaging.js
+├── meshrelay.js
+├── meshscanner.js
+├── meshsms.js
+├── meshuser.js
+├── monitoring.js
+├── mpsserver.js
+├── mqttbroker.js
+├── multiserver.js
+├── node11.bat
+├── node15.bat
+├── package-lock.json
+├── package.json
+├── pass.js
+├── pkcs7-modified.js
+├── pluginHandler.js
+├── readme.md
+├── redirserver.js
+├── reinstall-modules.bat
+├── sample-config-advanced.json
+├── sample-config.json
+├── SECURITY.md
+├── SourceFileList.txt
+├── swarmserver.js
+├── taskmanager.js
+├── webauthn.js
+├── webrelayserver.js
+├── webserver.js
+└── winservice.js
